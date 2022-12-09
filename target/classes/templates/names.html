@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:text="${name}"></div>
+<div>Imiona:</div>
+<div th:each="imie : ${imiona}" th:text="${imie}"></div>
+<div th:if="${imiona.size() == 4}">Ilość imion: 4</div>
+</body>
+</html>
